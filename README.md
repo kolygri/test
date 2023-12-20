@@ -8,7 +8,7 @@ This service connects to the Binance WebSocket stream and publishes the data to 
 
 1. Ensure you have Docker installed.
 2. Build the Docker image: `docker build -t binance-stream-service .`
- * In the case you want to reforece a docker rebuild use `docker build --no-cache -t binance-stream-service .`
+ * In the case you want to forece a docker rebuild use `docker build --no-cache -t binance-stream-service .`
 3. Run the Docker container: `docker run binance-stream-service`
 4. Log in the container interactively: `docker exec -it <container-id> /bin/bash` and execute `curl http://0.0.0.0:8000/` to test the service.
 
