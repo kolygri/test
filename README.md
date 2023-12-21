@@ -16,7 +16,7 @@ This service connects to the Binance WebSocket stream and publishes the data to 
 Note: You will need to have Redis running locally.
 
 1. Run the command `poetry run python run.py` to start the service. Navigate to `http://0.0.0.0:8000/` to test the service.
-2. heck that messages are being published to the Redis stream, run the command `redis-cli` on the command line and then `SUBSCRIBE bnb_btc_stream` to subscribe to the stream.
+2. Check that messages are being published to the Redis stream, run the command `redis-cli` on the command line and then `SUBSCRIBE bnb_btc_stream` to subscribe to the stream.
 3. You can hit endpoints such as `http://0.0.0.0:8000/default-redis-channel` and `http://0.0.0.0:8000/message-count` to get some metadata about the stream.
 
 ## CI/CD Pipeline
